@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WoMakersCode.Biblioteca.Core/1.0.0": {
+        "runtime": {
+          "WoMakersCode.Biblioteca.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WoMakersCode.Biblioteca.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

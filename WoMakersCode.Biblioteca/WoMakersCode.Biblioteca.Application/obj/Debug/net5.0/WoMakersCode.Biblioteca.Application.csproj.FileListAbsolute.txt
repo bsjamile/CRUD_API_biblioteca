@@ -1,0 +1,42 @@
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.deps.json
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.AssemblyReference.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.AssemblyInfoInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.AssemblyInfo.cs
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.CoreCompileInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Application.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Application.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.deps.json
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.AssemblyReference.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.AssemblyInfoInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.AssemblyInfo.cs
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.CoreCompileInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.CopyComplete
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Application.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Application.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.deps.json
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.pdb
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.AssemblyReference.cache
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.AssemblyInfoInputs.cache
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.AssemblyInfo.cs
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.CoreCompileInputs.cache
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.csproj.CopyComplete
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Application.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\WoMakersCode.Biblioteca.Application.pdb
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Application\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Application.dll

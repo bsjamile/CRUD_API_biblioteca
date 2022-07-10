@@ -1,0 +1,51 @@
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.deps.json
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.AssemblyReference.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfoInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfo.cs
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CoreCompileInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CopyComplete
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.deps.json
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.runtimeconfig.json
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.runtimeconfig.dev.json
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.AssemblyReference.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfoInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfo.cs
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CoreCompileInputs.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CopyComplete
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.genruntimeconfig.cache
+H:\Meu Drive\ConstruDelas\Assunto 10 - API\apiLivros\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Infra.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.deps.json
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.runtimeconfig.json
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.runtimeconfig.dev.json
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.AssemblyReference.cache
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfoInputs.cache
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfo.cs
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CopyComplete
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Infra.dll
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.genruntimeconfig.cache
+C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Infra.dll
