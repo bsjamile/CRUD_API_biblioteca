@@ -1,0 +1,42 @@
+CheckList API
+
+-------- Começar pelo Banco ---------
+
+- Entidade = Livro
+- ConfigurationEntity = para virar uma tabela = LivroConfiguration
+	Não esquecer de colocar a herança : IEntityTypeConfiguration<Livro>
+- Vincular a Configuration dentro do APPLICATIONCONTEXT onmodel creating
+	modelBuilder.ApplyConfiguration(new LivroConfiguration());
+- Criar o DBSet da entidade dentro da APPLICATIONCONTEXT
+	public DbSet<Livro> Livros { get; set; }
+- Gerar a Migration
+	dotnet ef --startup-project ..\WoMakersCode.Biblioteca.API\WoMakersCode.Biblioteca.API.csproj  migrations add AddAutores -p .\WoMakersCode.Biblioteca.Infra.csproj
+
+------------------------------------------
+
+- Criar Request e Response dentro da pasta criada ListarLivro dentro dos Models
+	Pasta ListarLivro = arquivos ListarLivrosRequest e ListarLivrosResponse
+- Criar UseCase = ListarLivrosUseCase
+- Vincular repositório no UseCase
+	Não esquecer de herdar: IUseCaseAsync<ListarLivrosRequest, List<ListarLivrosResponse>>
+- Adicionar UseCase na injeção de dependência Startup
+	services.AddTransient<IUseCaseAsync<ListarLivrosRequest, List<ListarLivrosResponse>>, ListarLivrosUseCase>();
+- Criar Controller
+	LivroController
+- Vincular UseCase no Controller
+	private readonly IUseCaseAsync<ListarLivrosRequest, List<ListarLivrosResponse>> _useCase; etc etc etc
+- Criar o Repositorio = ILivroRepository
+- Acertar o Repositório do Infra = LivroRepository
+- Vincular o ApplicationContext no Repositorio
+	private readonly ApplicationContext _context; etc etc etc
+- Acertar o Método do repositório
+	Ex: 
+		public async Task<IEnumerable<Livro>> ListarTodos()
+        {
+            return await _context
+                .Livros
+                .AsNoTracking()
+                .ToListAsync();
+        }
+	
+	
