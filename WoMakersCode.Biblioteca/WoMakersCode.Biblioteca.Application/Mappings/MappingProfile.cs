@@ -5,6 +5,10 @@ using WoMakersCode.Biblioteca.Application.Models.Autor.AtualizarAutor;
 using WoMakersCode.Biblioteca.Application.Models.DeletarAutor;
 using WoMakersCode.Biblioteca.Application.Models.DeletarLivro;
 using WoMakersCode.Biblioteca.Application.Models.DeletarUsuario;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.AdicionarEmprestimo;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.AtualizarEmprestimo;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.DeletarEmprestimo;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.ListarEmprestimo;
 using WoMakersCode.Biblioteca.Application.Models.ListarAutor;
 using WoMakersCode.Biblioteca.Application.Models.ListarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AtualizarLivro;
@@ -77,6 +81,27 @@ namespace WoMakersCode.Biblioteca.Application.Mappings
                 .ForMember(dest => dest.Nome, fonte => fonte.MapFrom(src => src.Nome))
                 .ForMember(dest => dest.Endereco, fonte => fonte.MapFrom(src => src.Endereco))
                 .ForMember(dest => dest.Telefone, fonte => fonte.MapFrom(src => src.Telefone));
+
+            CreateMap<Emprestimo, ListarEmprestimoResponse>() //source = fonte = de onde está vindo
+                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
+                .ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))
+                .ForMember(dest => dest.DataDevolucao, fonte => fonte.MapFrom(src => src.DataDevolucao))
+                .ForMember(dest => dest.IdUsuario, fonte => fonte.MapFrom(src => src.IdUsuario))
+                .ForMember(dest => dest.IdLivro, fonte => fonte.MapFrom(src => src.IdLivro));
+
+            CreateMap<AdicionarEmprestimoRequest, Emprestimo>() //source = fonte = de onde está vindo
+                .ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))
+                .ForMember(dest => dest.IdUsuario, fonte => fonte.MapFrom(src => src.IdUsuario));
+
+            CreateMap<AtualizarEmprestimoRequest, Emprestimo>() //source = fonte = de onde está vindo
+                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id));
+
+            CreateMap<Emprestimo, DeletarEmprestimoIdResponse>() //source = fonte = de onde está vindo
+                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
+                .ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))
+                .ForMember(dest => dest.DataDevolucao, fonte => fonte.MapFrom(src => src.DataDevolucao))
+                .ForMember(dest => dest.IdUsuario, fonte => fonte.MapFrom(src => src.IdUsuario))
+                .ForMember(dest => dest.IdLivro, fonte => fonte.MapFrom(src => src.IdLivro));
         }
     }
 }

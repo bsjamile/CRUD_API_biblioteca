@@ -4,7 +4,7 @@ using WoMakersCode.Biblioteca.Core.Entities;
 
 namespace WoMakersCode.Biblioteca.Infra.DataBase
 {
-    internal class LivroConfiguration : IEntityTypeConfiguration<Livro>
+    public class LivroConfiguration : IEntityTypeConfiguration<Livro>
     {
         public void Configure(EntityTypeBuilder<Livro> builder)
         {
@@ -18,7 +18,7 @@ namespace WoMakersCode.Biblioteca.Infra.DataBase
                 .HasColumnType("INT")
                 .IsRequired();
             builder.HasOne(fk => fk.Autor)
-                .WithMany(fk => fk.livros)
+                .WithMany(fk => fk.Livros)
                 .HasForeignKey(fk => fk.IdAutor);
         }
     }

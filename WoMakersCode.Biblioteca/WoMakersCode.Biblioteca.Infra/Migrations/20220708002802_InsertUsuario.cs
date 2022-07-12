@@ -6,8 +6,8 @@ namespace WoMakersCode.Biblioteca.Infra.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("INSERT INTO usuarios(nome, endereco, telefone) values ('Jamile', 'Rua x', '55555');");
-            migrationBuilder.Sql("INSERT INTO usuarios(nome, endereco, telefone) values ('Jessica', 'Rua y', '55556');");
+            migrationBuilder.Sql("INSERT INTO usuarios(nome, endereco, telefone) values ('Jam', 'Rua z', '55505555');");
+            migrationBuilder.Sql("INSERT INTO usuarios(nome, endereco, telefone) values ('Jess', 'Rua y', '5500045');");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

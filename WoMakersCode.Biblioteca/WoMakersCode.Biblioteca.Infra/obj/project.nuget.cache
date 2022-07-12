@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ArNProWcOIgCN1WszaGLV+dqUV5NMu9vQ+ggyVd1Mw3kHRfcOH5yfL4CzojjYhKAiwv5WfG8TikA7u97YZpDjQ==",
+  "dgSpecHash": "UBC0aAXY3z91Bv2cdO+i4gWqj3FhB1Qn2h4AwuybKo4vOw74wae74XCQ9Bn46bRdmjYa/hrH5I3OIgHtelFVsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jamile\\Desktop\\APILivrosJBS\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Infra\\WoMakersCode.Biblioteca.Infra.csproj",
+  "projectFilePath": "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Infra\\WoMakersCode.Biblioteca.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jamile\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

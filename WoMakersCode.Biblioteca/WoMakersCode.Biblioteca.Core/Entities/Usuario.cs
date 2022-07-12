@@ -1,4 +1,6 @@
-﻿namespace WoMakersCode.Biblioteca.Core.Entities
+﻿using System.Collections.Generic;
+
+namespace WoMakersCode.Biblioteca.Core.Entities
 {
     public class Usuario
     {
@@ -6,5 +8,6 @@
         public string Nome { get; set; }
         public string Endereco { get; set; }
         public string Telefone { get; set; }
+        public List<Emprestimo> emprestimos { get; set; }
     }
 }

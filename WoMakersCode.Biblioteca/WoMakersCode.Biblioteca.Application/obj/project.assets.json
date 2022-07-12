@@ -410,11 +410,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jamile\\Desktop\\APILivrosJBS\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\WoMakersCode.Biblioteca.Application.csproj",
+      "projectUniqueName": "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\WoMakersCode.Biblioteca.Application.csproj",
       "projectName": "WoMakersCode.Biblioteca.Application",
-      "projectPath": "C:\\Users\\Jamile\\Desktop\\APILivrosJBS\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\WoMakersCode.Biblioteca.Application.csproj",
+      "projectPath": "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\WoMakersCode.Biblioteca.Application.csproj",
       "packagesPath": "C:\\Users\\Jamile\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jamile\\Desktop\\APILivrosJBS\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\obj\\",
+      "outputPath": "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jamile\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -431,8 +431,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Jamile\\Desktop\\APILivrosJBS\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Core\\WoMakersCode.Biblioteca.Core.csproj": {
-              "projectPath": "C:\\Users\\Jamile\\Desktop\\APILivrosJBS\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Core\\WoMakersCode.Biblioteca.Core.csproj"
+            "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Core\\WoMakersCode.Biblioteca.Core.csproj": {
+              "projectPath": "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Core\\WoMakersCode.Biblioteca.Core.csproj"
             }
           }
         }

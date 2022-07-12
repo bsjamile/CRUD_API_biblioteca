@@ -45,6 +45,7 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         public async Task<ActionResult<List<ListarAutorResponse>>> Get([FromQuery] ListarAutorRequest request)
         {
             return await _getAllUseCase.ExecuteAsync(request);
+
         }
 
         [HttpPost]
@@ -56,8 +57,7 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         [HttpPut]
         public async Task<ActionResult<AtualizarAutorResponse>> Put([FromBody] AtualizarAutorRequest autor)
         {
-            await _putUseCase.ExecuteAsync(autor);
-            return NoContent();
+            return await _putUseCase.ExecuteAsync(autor);
         }
 
         [HttpDelete("{id}")]
@@ -68,7 +68,7 @@ namespace WoMakersCode.Biblioteca.API.Controllers
             if (autorToDelete == null)
                 return new NotFoundObjectResult("Não encontrado");
 
-            return NoContent();
+            return NoContent(); 
         }    
     }
 }

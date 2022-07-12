@@ -6,7 +6,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
 using System.Collections.Generic;
 using WoMakersCode.Biblioteca.Application.Mappings;
 using WoMakersCode.Biblioteca.Application.Models.AdicionarAutor;
@@ -16,6 +15,10 @@ using WoMakersCode.Biblioteca.Application.Models.Autor.AtualizarAutor;
 using WoMakersCode.Biblioteca.Application.Models.DeletarAutor;
 using WoMakersCode.Biblioteca.Application.Models.DeletarLivro;
 using WoMakersCode.Biblioteca.Application.Models.DeletarUsuario;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.AdicionarEmprestimo;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.AtualizarEmprestimo;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.DeletarEmprestimo;
+using WoMakersCode.Biblioteca.Application.Models.Emprestimo.ListarEmprestimo;
 using WoMakersCode.Biblioteca.Application.Models.ListarAutor;
 using WoMakersCode.Biblioteca.Application.Models.ListarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AdicionarLivro;
@@ -24,6 +27,8 @@ using WoMakersCode.Biblioteca.Application.Models.Usuario.AtualizarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.ListarUsuario;
 using WoMakersCode.Biblioteca.Application.UseCases;
 using WoMakersCode.Biblioteca.Application.UseCases.AutorUseCase;
+using WoMakersCode.Biblioteca.Application.UseCases.EmprestimoseCase;
+using WoMakersCode.Biblioteca.Application.UseCases.EmprestimoUseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.LivroUseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.UsuarioUseCase;
 using WoMakersCode.Biblioteca.Core.Repositories;
@@ -62,7 +67,12 @@ namespace WoMakersCode.Biblioteca.API
             services.AddTransient<IUseCaseAsync<ListarUsuarioRequest, List<ListarUsuarioResponse>>, ListarUsuarioUseCase>();
             services.AddTransient<IUseCaseAsync<AdicionarUsuarioRequest, AdicionarUsuarioResponse>, AdicionarUsuarioUseCase >();       
             services.AddTransient<IUseCaseAsync<AtualizarUsuarioRequest, AtualizarUsuarioResponse>, AtualizarUsuarioUseCase >();       
-            services.AddTransient<IUseCaseAsync<int, DeletarUsuarioIdResponse>, DeletarUsuarioIdUseCase>();       
+            services.AddTransient<IUseCaseAsync<int, DeletarUsuarioIdResponse>, DeletarUsuarioIdUseCase>();
+            services.AddTransient<IUseCaseAsync<int, ListarEmprestimoResponse>, ListarEmprestimoIdUseCase>();
+            services.AddTransient<IUseCaseAsync<ListarEmprestimoRequest, List<ListarEmprestimoResponse>>, ListarEmprestimoUseCase>();
+            services.AddTransient<IUseCaseAsync<AdicionarEmprestimoRequest, AdicionarEmprestimoResponse>, AdicionarEmprestimoUseCase>();
+            services.AddTransient<IUseCaseAsync<AtualizarEmprestimoRequest, AtualizarEmprestimoResponse>, AtualizarEmprestimoUseCase>();
+            services.AddTransient<IUseCaseAsync<DeletarEmprestimoIdRequest, DeletarEmprestimoIdResponse>, DeletarEmprestimoIdUseCase>();
 
             services.AddAutoMapper(typeof(MappingProfile));
 
@@ -78,16 +88,6 @@ namespace WoMakersCode.Biblioteca.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WoMakersCode.Biblioteca.API", Version = "v1" });
             });
-        }
-
-        private void UseSqlServer()
-        {
-            throw new NotImplementedException();
-        }
-
-        private int AdicionarUsuarioUseCase()
-        {
-            throw new NotImplementedException();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

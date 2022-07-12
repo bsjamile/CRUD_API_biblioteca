@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SULw7TVyHshcI00EuupFbuPq1XppEwAzegEbem4qpV1qI1PlD00sLzxdpeiucgOTsI9wQhLdkjgzMESLPAyt3Q==",
+  "dgSpecHash": "Q7Fva4ztGQjmOclZT/+/xpV/LGQim3DjqKpVlOXf37L/79jWSa0vgqJ9OXTxqHz+EhmuPFMUa7hIxmOSVebcvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jamile\\Desktop\\APILivrosJBS\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\WoMakersCode.Biblioteca.Application.csproj",
+  "projectFilePath": "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.Application\\WoMakersCode.Biblioteca.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jamile\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Jamile\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

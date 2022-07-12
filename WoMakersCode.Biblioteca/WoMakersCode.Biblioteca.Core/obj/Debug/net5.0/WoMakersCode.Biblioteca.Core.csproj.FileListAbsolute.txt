@@ -34,3 +34,15 @@ C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblio
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Core.dll
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.deps.json
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.csproj.AssemblyReference.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.AssemblyInfoInputs.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.AssemblyInfo.cs
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.csproj.CoreCompileInputs.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Core\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Core.dll

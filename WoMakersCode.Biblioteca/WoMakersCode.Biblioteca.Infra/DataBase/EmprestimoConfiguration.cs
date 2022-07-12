@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using WoMakersCode.Biblioteca.Core.Entities;
-
 namespace WoMakersCode.Biblioteca.Infra.DataBase
 {
-    public class EmprestimoConfiguration 
+    public class EmprestimoConfiguration : IEntityTypeConfiguration<Emprestimo>
     {
         public void Configure(EntityTypeBuilder<Emprestimo> builder)
         {
@@ -14,14 +13,13 @@ namespace WoMakersCode.Biblioteca.Infra.DataBase
                 .HasColumnType("DATETIME")
                 .IsRequired();
             builder.Property(p => p.DataDevolucao)
-                .HasColumnType("DATETIME")
-                .IsRequired();
-            /*
-            
-            public int IdUsuario { get; set; }
-            public Usuario Usuario { get; set; }
-            public int IdLivro { get; set; }
-            public Livro Livro { get; set; }*/
+                .HasColumnType("DATETIME");
+            builder.HasOne(fk => fk.Usuario)
+                .WithMany(fk => fk.emprestimos)
+                .HasForeignKey(fk => fk.IdUsuario);
+            builder.HasOne(fk => fk.Livro)
+                .WithMany(fk => fk.emprestimos)
+                .HasForeignKey(fk => fk.IdLivro);
         }
     }
 }

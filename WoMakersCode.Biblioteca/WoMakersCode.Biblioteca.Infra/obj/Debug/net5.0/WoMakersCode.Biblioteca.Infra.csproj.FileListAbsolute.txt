@@ -49,3 +49,21 @@ C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblio
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.genruntimeconfig.cache
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.deps.json
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.runtimeconfig.json
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.runtimeconfig.dev.json
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.AssemblyReference.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfoInputs.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.AssemblyInfo.cs
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CoreCompileInputs.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.csproj.CopyComplete
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\refint\WoMakersCode.Biblioteca.Infra.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\WoMakersCode.Biblioteca.Infra.genruntimeconfig.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.Infra\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.Infra.dll

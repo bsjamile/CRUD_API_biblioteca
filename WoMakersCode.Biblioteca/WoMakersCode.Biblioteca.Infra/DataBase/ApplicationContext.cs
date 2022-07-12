@@ -19,7 +19,8 @@ namespace WoMakersCode.Biblioteca.Infra.DataBase
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
             modelBuilder.ApplyConfiguration(new AutorConfiguration());
             modelBuilder.ApplyConfiguration(new LivroConfiguration());
-           
+            modelBuilder.ApplyConfiguration(new EmprestimoConfiguration());
+
         }
     }
 }
