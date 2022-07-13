@@ -33,10 +33,6 @@ namespace WoMakersCode.Biblioteca.Application.Mappings
                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
                .ForMember(dest => dest.Nome, fonte => fonte.MapFrom(src => src.Nome));
 
-            CreateMap<Autor, DeletarAutorIdResponse>() //source = fonte = de onde está vindo
-                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
-                .ForMember(dest => dest.Nome, fonte => fonte.MapFrom(src => src.Nome));
-
             CreateMap<Livro, ListarLivroResponse>() //source = fonte = de onde está vindo
                 .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Titulo, fonte => fonte.MapFrom(src => src.Titulo))
@@ -53,12 +49,6 @@ namespace WoMakersCode.Biblioteca.Application.Mappings
                 .ForMember(dest => dest.Titulo, fonte => fonte.MapFrom(src => src.Titulo))
                 .ForMember(dest => dest.QuantidadeDisponivel, fonte => fonte.MapFrom(src => src.QuantidadeDisponivel));
      
-            CreateMap<Livro, DeletarLivroIdResponse>() //source = fonte = de onde está vindo
-                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
-                .ForMember(dest => dest.Titulo, fonte => fonte.MapFrom(src => src.Titulo))
-                .ForMember(dest => dest.QuantidadeDisponivel, fonte => fonte.MapFrom(src => src.QuantidadeDisponivel))
-                .ForMember(dest => dest.IdAutor, fonte => fonte.MapFrom(src => src.IdAutor));
-
             CreateMap<Usuario, ListarUsuarioResponse>() //source = fonte = de onde está vindo
                 .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Nome, fonte => fonte.MapFrom(src => src.Nome))
@@ -71,12 +61,6 @@ namespace WoMakersCode.Biblioteca.Application.Mappings
                 .ForMember(dest => dest.Telefone, fonte => fonte.MapFrom(src => src.Telefone));
 
             CreateMap<AtualizarUsuarioRequest, Usuario>() //source = fonte = de onde está vindo
-                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
-                .ForMember(dest => dest.Nome, fonte => fonte.MapFrom(src => src.Nome))
-                .ForMember(dest => dest.Endereco, fonte => fonte.MapFrom(src => src.Endereco))
-                .ForMember(dest => dest.Telefone, fonte => fonte.MapFrom(src => src.Telefone));
-
-            CreateMap<Usuario, DeletarUsuarioIdResponse>() //source = fonte = de onde está vindo
                 .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Nome, fonte => fonte.MapFrom(src => src.Nome))
                 .ForMember(dest => dest.Endereco, fonte => fonte.MapFrom(src => src.Endereco))
@@ -95,13 +79,6 @@ namespace WoMakersCode.Biblioteca.Application.Mappings
 
             CreateMap<AtualizarEmprestimoRequest, Emprestimo>() //source = fonte = de onde está vindo
                 .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id));
-
-            CreateMap<Emprestimo, DeletarEmprestimoIdResponse>() //source = fonte = de onde está vindo
-                .ForMember(dest => dest.Id, fonte => fonte.MapFrom(src => src.Id))
-                .ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))
-                .ForMember(dest => dest.DataDevolucao, fonte => fonte.MapFrom(src => src.DataDevolucao))
-                .ForMember(dest => dest.IdUsuario, fonte => fonte.MapFrom(src => src.IdUsuario))
-                .ForMember(dest => dest.IdLivro, fonte => fonte.MapFrom(src => src.IdLivro));
         }
     }
 }

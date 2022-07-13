@@ -21,17 +21,16 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task Excluir(int id)
+        public async Task Excluir(Autor autor)
         {
-            var autorToDelete = await _context.Autores.FindAsync(id);
-            var resultado = _context.Autores.Remove(autorToDelete);
+            _context.Remove(autor);
             await _context.SaveChangesAsync();
         }
 
         public async Task Inserir(Autor autor)
         {
             _context.Add(autor);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public async Task<Autor> ListarPorId(int id)

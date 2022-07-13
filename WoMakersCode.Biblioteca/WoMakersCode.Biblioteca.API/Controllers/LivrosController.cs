@@ -7,6 +7,7 @@ using WoMakersCode.Biblioteca.Application.Models.DeletarLivro;
 using WoMakersCode.Biblioteca.Application.Models.ListarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AdicionarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AtualizarLivro;
+using WoMakersCode.Biblioteca.Application.Models.Livro.DeletarLivro;
 using WoMakersCode.Biblioteca.Application.UseCases;
 using WoMakersCode.Biblioteca.Core.Entities;
 
@@ -20,12 +21,12 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         private readonly IUseCaseAsync<ListarLivroRequest, List<ListarLivroResponse>> _getAllUseCase;
         private readonly IUseCaseAsync<AdicionarLivroRequest, AdicionarLivroResponse> _postUseCase;
         private readonly IUseCaseAsync<AtualizarLivroRequest, AtualizarLivroResponse> _putUseCase;
-        private readonly IUseCaseAsync<int, DeletarLivroIdResponse> _deleteUseCase;
-        public LivrosController(IUseCaseAsync<int, ListarLivroResponse> getIdUseCase, 
+        private readonly IUseCaseAsync<DeletarLivroIdRequest, DeletarLivroIdResponse> _deleteUseCase;
+        public LivrosController(IUseCaseAsync<int, ListarLivroResponse> getIdUseCase,
             IUseCaseAsync<ListarLivroRequest, List<ListarLivroResponse>> getAllUseCase,
             IUseCaseAsync<AdicionarLivroRequest, AdicionarLivroResponse> postUseCase,
             IUseCaseAsync<AtualizarLivroRequest, AtualizarLivroResponse> putUseCase,
-            IUseCaseAsync<int, DeletarLivroIdResponse> deleteUseCase)
+            IUseCaseAsync<DeletarLivroIdRequest, DeletarLivroIdResponse> deleteUseCase)
         {
             _getIdUseCase = getIdUseCase;
             _getAllUseCase = getAllUseCase;
@@ -64,14 +65,9 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<DeletarLivroIdResponse>> Delete(int id)
+        public async Task<ActionResult<DeletarLivroIdResponse>> Delete([FromRoute] int id)
         {
-            var livroToDelete = await _deleteUseCase.ExecuteAsync(id);
-
-            if (livroToDelete == null)
-                return new NotFoundObjectResult("Não encontrado");
-
-            return NoContent();
+            return await _deleteUseCase.ExecuteAsync(new DeletarLivroIdRequest() { Id = id });
         }
     }
 }

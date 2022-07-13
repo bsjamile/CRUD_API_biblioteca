@@ -12,6 +12,7 @@ using WoMakersCode.Biblioteca.Application.Models.AdicionarAutor;
 using WoMakersCode.Biblioteca.Application.Models.AdicionarLivro;
 using WoMakersCode.Biblioteca.Application.Models.AdicionarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.Autor.AtualizarAutor;
+using WoMakersCode.Biblioteca.Application.Models.Autor.DeletarAutor;
 using WoMakersCode.Biblioteca.Application.Models.DeletarAutor;
 using WoMakersCode.Biblioteca.Application.Models.DeletarLivro;
 using WoMakersCode.Biblioteca.Application.Models.DeletarUsuario;
@@ -23,11 +24,12 @@ using WoMakersCode.Biblioteca.Application.Models.ListarAutor;
 using WoMakersCode.Biblioteca.Application.Models.ListarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AdicionarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AtualizarLivro;
+using WoMakersCode.Biblioteca.Application.Models.Livro.DeletarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.AtualizarUsuario;
+using WoMakersCode.Biblioteca.Application.Models.Usuario.DeletarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.ListarUsuario;
 using WoMakersCode.Biblioteca.Application.UseCases;
 using WoMakersCode.Biblioteca.Application.UseCases.AutorUseCase;
-using WoMakersCode.Biblioteca.Application.UseCases.EmprestimoseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.EmprestimoUseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.LivroUseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.UsuarioUseCase;
@@ -57,17 +59,17 @@ namespace WoMakersCode.Biblioteca.API
             services.AddTransient<IUseCaseAsync<ListarAutorRequest, List<ListarAutorResponse>>, ListarAutorUseCase>();
             services.AddTransient<IUseCaseAsync<AdicionarAutorRequest, AdicionarAutorResponse>, AdicionarAutorUseCase>();
             services.AddTransient<IUseCaseAsync < AtualizarAutorRequest, AtualizarAutorResponse >, AtualizarAutorUseCase >();
-            services.AddTransient<IUseCaseAsync<int, DeletarAutorIdResponse>, DeletarAutorIdUseCase>();
+            services.AddTransient<IUseCaseAsync<DeletarAutorIdRequest, DeletarAutorIdResponse>, DeletarAutorIdUseCase>();
             services.AddTransient<IUseCaseAsync<int, ListarLivroResponse>, ListarLivroIdUseCase>();
             services.AddTransient<IUseCaseAsync<ListarLivroRequest, List<ListarLivroResponse>>, ListarLivroUseCase>();
             services.AddTransient<IUseCaseAsync<AdicionarLivroRequest, AdicionarLivroResponse>, AdicionarLivroUseCase>();
             services.AddTransient<IUseCaseAsync<AtualizarLivroRequest, AtualizarLivroResponse >, AtualizarLivroUseCase>();
-            services.AddTransient<IUseCaseAsync<int, DeletarLivroIdResponse>, DeletarLivroIdUseCase>();
+            services.AddTransient<IUseCaseAsync<DeletarLivroIdRequest, DeletarLivroIdResponse>, DeletarLivroIdUseCase>();
             services.AddTransient<IUseCaseAsync<int, ListarUsuarioResponse>, ListarUsuarioIdUseCase>();
             services.AddTransient<IUseCaseAsync<ListarUsuarioRequest, List<ListarUsuarioResponse>>, ListarUsuarioUseCase>();
             services.AddTransient<IUseCaseAsync<AdicionarUsuarioRequest, AdicionarUsuarioResponse>, AdicionarUsuarioUseCase >();       
             services.AddTransient<IUseCaseAsync<AtualizarUsuarioRequest, AtualizarUsuarioResponse>, AtualizarUsuarioUseCase >();       
-            services.AddTransient<IUseCaseAsync<int, DeletarUsuarioIdResponse>, DeletarUsuarioIdUseCase>();
+            services.AddTransient<IUseCaseAsync<DeletarUsuarioIdRequest, DeletarUsuarioIdResponse>, DeletarUsuarioIdUseCase>();
             services.AddTransient<IUseCaseAsync<int, ListarEmprestimoResponse>, ListarEmprestimoIdUseCase>();
             services.AddTransient<IUseCaseAsync<ListarEmprestimoRequest, List<ListarEmprestimoResponse>>, ListarEmprestimoUseCase>();
             services.AddTransient<IUseCaseAsync<AdicionarEmprestimoRequest, AdicionarEmprestimoResponse>, AdicionarEmprestimoUseCase>();
@@ -80,8 +82,6 @@ namespace WoMakersCode.Biblioteca.API
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                 .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
              );
-
-
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

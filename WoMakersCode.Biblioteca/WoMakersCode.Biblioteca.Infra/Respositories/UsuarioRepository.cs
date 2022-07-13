@@ -20,10 +20,9 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task Excluir(int id)
+        public async Task Excluir(Usuario usuario)
         {
-            var usuarioToDelete = await _context.Usuarios.FindAsync(id);
-            _context.Usuarios.Remove(usuarioToDelete);
+            _context.Remove(usuario);
             await _context.SaveChangesAsync();
         }
 

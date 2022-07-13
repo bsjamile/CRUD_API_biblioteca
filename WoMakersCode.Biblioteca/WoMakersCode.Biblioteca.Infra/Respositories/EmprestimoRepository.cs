@@ -18,24 +18,19 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
         }
         public async Task Atualizar(Emprestimo emprestimo)
         {
-            _context.Entry(emprestimo).State = EntityState.Modified;
+            _context.Update(emprestimo);
             await _context.SaveChangesAsync();
         }
 
-        public async Task Excluir(int id)
+        public async Task Excluir(Emprestimo emprestimo)
         {
-            var emprestimoToDelete = await _context.Emprestimos.FindAsync(id);
-            var resultado = _context.Emprestimos.Remove(emprestimoToDelete);
+            _context.Remove(emprestimo);
             await _context.SaveChangesAsync();
-            /*
-            var emprestimoToDelete = await _context.Emprestimos.FindAsync(id);
-            _context.Emprestimos.Remove(emprestimoToDelete);
-            await _context.SaveChangesAsync();*/
         }
 
         public async Task Inserir(Emprestimo emprestimo)
         {
-            _context.Emprestimos.Add(emprestimo);
+            _context.Add(emprestimo);
             await _context.SaveChangesAsync();
         }
 
@@ -53,7 +48,11 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
 
         public async Task<Emprestimo> ListarPorId(int id)
         {
-            return await Task.FromResult(_context.Find<Emprestimo>(id));
+            return await _context
+                .Emprestimos
+                .Where(w => w.Id == id)
+                .AsNoTracking()
+                .FirstOrDefaultAsync();
         }
 
         public async Task<Emprestimo> ListarPorIdParaAtualizarEmprestimo(int id)

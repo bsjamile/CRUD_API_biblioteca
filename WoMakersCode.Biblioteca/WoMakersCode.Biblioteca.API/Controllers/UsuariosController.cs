@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using WoMakersCode.Biblioteca.Application.Models.AdicionarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.DeletarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.AtualizarUsuario;
+using WoMakersCode.Biblioteca.Application.Models.Usuario.DeletarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.ListarUsuario;
 using WoMakersCode.Biblioteca.Application.UseCases;
 
@@ -17,13 +18,13 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         private readonly IUseCaseAsync<ListarUsuarioRequest, List<ListarUsuarioResponse>> _getAllUseCase;
         private readonly IUseCaseAsync<AdicionarUsuarioRequest, AdicionarUsuarioResponse> _postUseCase;
         private readonly IUseCaseAsync<AtualizarUsuarioRequest, AtualizarUsuarioResponse> _putUseCase;
-        private readonly IUseCaseAsync<int, DeletarUsuarioIdResponse> _deleteUseCase;
+        private readonly IUseCaseAsync<DeletarUsuarioIdRequest, DeletarUsuarioIdResponse> _deleteUseCase;
 
         public UsuariosController(IUseCaseAsync<int, ListarUsuarioResponse> getIdUseCase,
             IUseCaseAsync<ListarUsuarioRequest, List<ListarUsuarioResponse>> getAllUseCase,
             IUseCaseAsync<AdicionarUsuarioRequest, AdicionarUsuarioResponse> postUseCase,
             IUseCaseAsync<AtualizarUsuarioRequest, AtualizarUsuarioResponse> putUseCase,
-            IUseCaseAsync<int, DeletarUsuarioIdResponse> deleteUseCase)
+            IUseCaseAsync<DeletarUsuarioIdRequest, DeletarUsuarioIdResponse> deleteUseCase)
         {
             _getIdUseCase = getIdUseCase;
             _getAllUseCase = getAllUseCase;
@@ -62,14 +63,17 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<DeletarUsuarioIdResponse>> Delete(int id)
+        public async Task<ActionResult<DeletarUsuarioIdResponse>> Delete([FromRoute] int id)
         {
-            var usuarioToDelete = await _deleteUseCase.ExecuteAsync(id);
+            return await _deleteUseCase.ExecuteAsync(new DeletarUsuarioIdRequest() { Id = id });
+        }
+
+        /*var usuarioToDelete = await _deleteUseCase.ExecuteAsync(id);
 
             if (usuarioToDelete == null)
                 return new NotFoundObjectResult("Não encontrado");
 
-            return NoContent();
-        }
+            return NoContent();*/
     }
 }
+

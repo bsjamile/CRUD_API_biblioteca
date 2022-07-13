@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using WoMakersCode.Biblioteca.Application.Models.AdicionarAutor;
 using WoMakersCode.Biblioteca.Application.Models.Autor.AtualizarAutor;
+using WoMakersCode.Biblioteca.Application.Models.Autor.DeletarAutor;
 using WoMakersCode.Biblioteca.Application.Models.DeletarAutor;
 using WoMakersCode.Biblioteca.Application.Models.ListarAutor;
 using WoMakersCode.Biblioteca.Application.UseCases;
@@ -17,12 +18,12 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         private readonly IUseCaseAsync<ListarAutorRequest, List<ListarAutorResponse>> _getAllUseCase;
         private readonly IUseCaseAsync<AdicionarAutorRequest, AdicionarAutorResponse> _postUseCase;
         private readonly IUseCaseAsync<AtualizarAutorRequest, AtualizarAutorResponse> _putUseCase;
-        private readonly IUseCaseAsync<int, DeletarAutorIdResponse> _deleteUseCase;
+        private readonly IUseCaseAsync<DeletarAutorIdRequest, DeletarAutorIdResponse> _deleteUseCase;
         public AutoresController(IUseCaseAsync<int, ListarAutorResponse> getIdUseCase,
             IUseCaseAsync<ListarAutorRequest, List<ListarAutorResponse>> getAllUseCase,
             IUseCaseAsync<AdicionarAutorRequest, AdicionarAutorResponse> postUseCase,
             IUseCaseAsync<AtualizarAutorRequest, AtualizarAutorResponse> putUseCase,
-            IUseCaseAsync<int, DeletarAutorIdResponse> deleteUseCase)
+            IUseCaseAsync<DeletarAutorIdRequest, DeletarAutorIdResponse> deleteUseCase)
         {
             _getIdUseCase = getIdUseCase;            
             _getAllUseCase = getAllUseCase;
@@ -61,14 +62,9 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<DeletarAutorIdResponse>> Delete(int id)
+        public async Task<ActionResult<DeletarAutorIdResponse>> Delete([FromRoute] int id)
         {
-            var autorToDelete = await _deleteUseCase.ExecuteAsync(id);
-
-            if (autorToDelete == null)
-                return new NotFoundObjectResult("Não encontrado");
-
-            return NoContent(); 
-        }    
+            return await _deleteUseCase.ExecuteAsync(new DeletarAutorIdRequest() { Id = id });
+        }
     }
 }

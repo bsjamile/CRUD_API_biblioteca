@@ -1,28 +1,25 @@
 ﻿using AutoMapper;
 using System.Threading.Tasks;
 using WoMakersCode.Biblioteca.Application.Models.DeletarUsuario;
+using WoMakersCode.Biblioteca.Application.Models.Usuario.DeletarUsuario;
 using WoMakersCode.Biblioteca.Core.Repositories;
 
 namespace WoMakersCode.Biblioteca.Application.UseCases.UsuarioUseCase
 {
-    public class DeletarUsuarioIdUseCase : IUseCaseAsync<int, DeletarUsuarioIdResponse>
+    public class DeletarUsuarioIdUseCase : IUseCaseAsync<DeletarUsuarioIdRequest, DeletarUsuarioIdResponse>
     {
         public readonly IUsuarioRepository _repository;
-        public readonly IMapper _mapper;
         public DeletarUsuarioIdUseCase(IUsuarioRepository repository,
             IMapper mapper)
         {
             _repository = repository;
-            _mapper = mapper;
         }
 
-        public async Task<DeletarUsuarioIdResponse> ExecuteAsync(int request)
+        public async Task<DeletarUsuarioIdResponse> ExecuteAsync(DeletarUsuarioIdRequest request)
         {
-            var resposta = _repository.Excluir(request);
-
-            var response = _mapper.Map<DeletarUsuarioIdResponse>(resposta);
-
-            return response;
+            var usuario = await _repository.ListarPorId(request.Id);
+            await _repository.Excluir(usuario);
+            return new DeletarUsuarioIdResponse();
         }
 
     }

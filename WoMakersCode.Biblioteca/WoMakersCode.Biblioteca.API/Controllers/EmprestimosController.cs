@@ -1,14 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WoMakersCode.Biblioteca.Application.Models.AdicionarAutor;
-using WoMakersCode.Biblioteca.Application.Models.Autor.AtualizarAutor;
-using WoMakersCode.Biblioteca.Application.Models.DeletarAutor;
 using WoMakersCode.Biblioteca.Application.Models.Emprestimo.AdicionarEmprestimo;
 using WoMakersCode.Biblioteca.Application.Models.Emprestimo.AtualizarEmprestimo;
 using WoMakersCode.Biblioteca.Application.Models.Emprestimo.DeletarEmprestimo;
 using WoMakersCode.Biblioteca.Application.Models.Emprestimo.ListarEmprestimo;
-using WoMakersCode.Biblioteca.Application.Models.ListarAutor;
 using WoMakersCode.Biblioteca.Application.UseCases;
 
 namespace WoMakersCode.Biblioteca.API.Controllers
@@ -21,12 +17,12 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         private readonly IUseCaseAsync<ListarEmprestimoRequest, List<ListarEmprestimoResponse>> _getAllUseCase;
         private readonly IUseCaseAsync<AdicionarEmprestimoRequest, AdicionarEmprestimoResponse> _postUseCase;
         private readonly IUseCaseAsync<AtualizarEmprestimoRequest, AtualizarEmprestimoResponse> _putUseCase;
-        private readonly IUseCaseAsync<int, DeletarEmprestimoIdResponse> _deleteUseCase;
+        private readonly IUseCaseAsync<DeletarEmprestimoIdRequest, DeletarEmprestimoIdResponse> _deleteUseCase;
         public EmprestimosController(IUseCaseAsync<int, ListarEmprestimoResponse> getIdUseCase,
             IUseCaseAsync<ListarEmprestimoRequest, List<ListarEmprestimoResponse>> getAllUseCase,
             IUseCaseAsync<AdicionarEmprestimoRequest, AdicionarEmprestimoResponse> postUseCase,
             IUseCaseAsync<AtualizarEmprestimoRequest, AtualizarEmprestimoResponse> putUseCase,
-            IUseCaseAsync<int, DeletarEmprestimoIdResponse> deleteUseCase)
+            IUseCaseAsync<DeletarEmprestimoIdRequest, DeletarEmprestimoIdResponse> deleteUseCase)
         {
             _getIdUseCase = getIdUseCase;
             _getAllUseCase = getAllUseCase;
@@ -65,21 +61,22 @@ namespace WoMakersCode.Biblioteca.API.Controllers
         }
 
         [HttpDelete("{id:int}")]
-        public async Task<ActionResult<DeletarEmprestimoIdResponse>> Delete(int id)
+
+        public async Task<ActionResult<DeletarEmprestimoIdResponse>> Delete([FromRoute] int id)
         {
-
-            var emprestimoToDelete = await _deleteUseCase.ExecuteAsync(id);
-
-            if (emprestimoToDelete == null)
-                return new NotFoundObjectResult("Não encontrado");
-
-            return NoContent();
-
-            /*
-             * public async Task<ActionResult<DeletarEmprestimoIdResponse>> Delete([FromRoute] int id)
-             {
-            return await _deleteUseCase.ExecuteAsync(new DeletarEmprestimoIdRequest() { Id = id });*/
+            return await _deleteUseCase.ExecuteAsync(new DeletarEmprestimoIdRequest() { Id = id });
         }
+        /*
+         * 
+         public async Task<ActionResult<DeletarEmprestimoIdResponse>> Delete(int id)
+        var emprestimoToDelete = await _deleteUseCase.ExecuteAsync(id);
+
+        if (emprestimoToDelete == null)
+            return new NotFoundObjectResult("Não encontrado");
+
+        return NoContent();
+        */
     }
 }
+
 

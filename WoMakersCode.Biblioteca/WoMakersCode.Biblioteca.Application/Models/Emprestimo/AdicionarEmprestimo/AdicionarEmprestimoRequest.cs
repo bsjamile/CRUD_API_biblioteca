@@ -10,5 +10,6 @@ namespace WoMakersCode.Biblioteca.Application.Models.Emprestimo.AdicionarEmprest
     {
         public DateTime DataEmprestimo { get; set; }
         public int IdUsuario { get; set; }
+        public int IdLivro { get; set; }
     }
 }

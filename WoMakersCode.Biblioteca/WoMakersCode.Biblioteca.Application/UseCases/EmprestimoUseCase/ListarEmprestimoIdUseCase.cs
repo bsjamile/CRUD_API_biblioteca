@@ -4,13 +4,13 @@ using WoMakersCode.Biblioteca.Application.Models.Emprestimo.ListarEmprestimo;
 using WoMakersCode.Biblioteca.Application.Models.ListarLivro;
 using WoMakersCode.Biblioteca.Core.Repositories;
 
-namespace WoMakersCode.Biblioteca.Application.UseCases.EmprestimoseCase
+namespace WoMakersCode.Biblioteca.Application.UseCases.EmprestimoUseCase
 {
-    public class ListarEmprestimoUseCase : IUseCaseAsync<int, ListarEmprestimoResponse>
+    public class ListarEmprestimoIdUseCase : IUseCaseAsync<int, ListarEmprestimoResponse>
     {
         public readonly IEmprestimoRepository _repository;
         public readonly IMapper _mapper;
-        public ListarEmprestimoUseCase(IEmprestimoRepository repository,
+        public ListarEmprestimoIdUseCase(IEmprestimoRepository repository,
             IMapper mapper)
         {
             _repository = repository;

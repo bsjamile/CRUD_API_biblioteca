@@ -43,7 +43,6 @@ namespace WoMakersCode.Biblioteca.Infra.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime?>("DataDevolucao")
-                        .IsRequired()
                         .HasColumnType("DATETIME");
 
                     b.Property<DateTime>("DataEmprestimo")

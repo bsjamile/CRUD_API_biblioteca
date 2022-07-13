@@ -20,7 +20,7 @@ namespace WoMakersCode.Biblioteca.Application.UseCases.EmprestimoUseCase
         public async Task<AdicionarEmprestimoResponse> ExecuteAsync(AdicionarEmprestimoRequest request)
         {
             if (request == null)
-                return null;
+                throw new System.Exception ("AdicionarEmprestimoRequest está nulo.");
 
             var emprestimo = _mapper.Map<Emprestimo>(request);
 

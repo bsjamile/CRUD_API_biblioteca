@@ -9,7 +9,7 @@ namespace WoMakersCode.Biblioteca.Core.Repositories
         Task Atualizar(T obj);
         Task<IEnumerable<T>> ListarTodos();
         Task <T> ListarPorId(int id);
-        Task Excluir (int id);
+        Task Excluir (T obj);
 
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RuBv7ZOp7FU8C0dJfBpa5WyPxRa6tHbS7mvqor8/HdyheHpVXwFKfGpdQ8ZgJCvnPgIuIlAV5vAVqTHFVCgIdg==",
+  "dgSpecHash": "O4rhvTMHJPT0qnGmVB8jLnFZeG0uoU5mznvMW8tATJy/MtfEoaEpbiHXJhqToJR+QwRdUwYCdSqRuv66bTXg7A==",
   "success": true,
   "projectFilePath": "H:\\Meu Drive\\GitHub\\MeusProjetos\\API_biblioteca\\WoMakersCode.Biblioteca\\WoMakersCode.Biblioteca.API\\WoMakersCode.Biblioteca.API.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,6 @@
     "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.17\\microsoft.entityframeworkcore.design.5.0.17.nupkg.sha512",
     "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.17\\microsoft.entityframeworkcore.relational.5.0.17.nupkg.sha512",
     "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.17\\microsoft.entityframeworkcore.sqlserver.5.0.17.nupkg.sha512",
-    "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.17\\microsoft.entityframeworkcore.tools.5.0.17.nupkg.sha512",
     "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Jamile\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",

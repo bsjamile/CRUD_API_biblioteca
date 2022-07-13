@@ -1,29 +1,25 @@
 ﻿using AutoMapper;
 using System.Threading.Tasks;
 using WoMakersCode.Biblioteca.Application.Models.DeletarLivro;
+using WoMakersCode.Biblioteca.Application.Models.Livro.DeletarLivro;
 using WoMakersCode.Biblioteca.Core.Entities;
 using WoMakersCode.Biblioteca.Core.Repositories;
 
 namespace WoMakersCode.Biblioteca.Application.UseCases.LivroUseCase
 {
-    public class DeletarLivroIdUseCase : IUseCaseAsync<int, DeletarLivroIdResponse>
+    public class DeletarLivroIdUseCase : IUseCaseAsync<DeletarLivroIdRequest, DeletarLivroIdResponse>
     {
         public readonly ILivroRepository _repository;
-        public readonly IMapper _mapper;
-        public DeletarLivroIdUseCase(ILivroRepository repository,
-            IMapper mapper)
+        public DeletarLivroIdUseCase(ILivroRepository repository)
         {
             _repository = repository;
-            _mapper = mapper;
         }
 
-        public async Task<DeletarLivroIdResponse> ExecuteAsync(int request)
+        public async Task<DeletarLivroIdResponse> ExecuteAsync(DeletarLivroIdRequest request)
         {
-            var resposta = _repository.Excluir(request);
-
-            var response = _mapper.Map<DeletarLivroIdResponse>(resposta);
-
-            return response;
+            var livro = await _repository.ListarPorId(request.Id);
+            await _repository.Excluir(livro);
+            return new DeletarLivroIdResponse();
         }
 
     }
