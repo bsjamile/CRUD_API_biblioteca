@@ -67,11 +67,11 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
         {
             return await _context
                 .Emprestimos
-                .AsNoTracking()
                 .Include(i => i.Livro)
                     .ThenInclude(i => i.Autor)
                 .Include(i => i.Usuario)
                     //.ThenInclude() traz as tabelas que estao vinculas à tabela Usuario, por exemplo
+                .AsNoTracking()
                 .ToListAsync();
         }
     }

@@ -180,6 +180,12 @@ C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblio
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.pdb
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.genruntimeconfig.cache
 C:\Users\Jamile\Desktop\APILivrosJBS\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\ref\WoMakersCode.Biblioteca.API.dll
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.csproj.AssemblyReference.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.AssemblyInfoInputs.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.AssemblyInfo.cs
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.csproj.CoreCompileInputs.cache
+H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.MvcApplicationPartsAssemblyInfo.cache
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\bin\Debug\net5.0\appsettings.Development.json
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\bin\Debug\net5.0\appsettings.json
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\bin\Debug\net5.0\WoMakersCode.Biblioteca.API.exe
@@ -239,13 +245,6 @@ H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakers
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\bin\Debug\net5.0\WoMakersCode.Biblioteca.Application.pdb
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\bin\Debug\net5.0\WoMakersCode.Biblioteca.Core.pdb
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\bin\Debug\net5.0\WoMakersCode.Biblioteca.Infra.pdb
-H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.csproj.AssemblyReference.cache
-H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.GeneratedMSBuildEditorConfig.editorconfig
-H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.AssemblyInfoInputs.cache
-H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.AssemblyInfo.cs
-H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.csproj.CoreCompileInputs.cache
-H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.MvcApplicationPartsAssemblyInfo.cs
-H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.MvcApplicationPartsAssemblyInfo.cache
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\scopedcss\bundle\WoMakersCode.Biblioteca.API.styles.css
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\staticwebassets\WoMakersCode.Biblioteca.API.StaticWebAssets.Manifest.cache
 H:\Meu Drive\GitHub\MeusProjetos\API_biblioteca\WoMakersCode.Biblioteca\WoMakersCode.Biblioteca.API\obj\Debug\net5.0\WoMakersCode.Biblioteca.API.RazorTargetAssemblyInfo.cache

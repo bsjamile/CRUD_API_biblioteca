@@ -25,6 +25,9 @@ using WoMakersCode.Biblioteca.Application.Models.ListarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AdicionarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.AtualizarLivro;
 using WoMakersCode.Biblioteca.Application.Models.Livro.DeletarLivro;
+using WoMakersCode.Biblioteca.Application.Models.Relatorio.DevolucoesEmAtraso;
+using WoMakersCode.Biblioteca.Application.Models.Relatorio.LivrosDisponiveis;
+using WoMakersCode.Biblioteca.Application.Models.Relatorio.LivrosEmEmprestimo;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.AtualizarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.DeletarUsuario;
 using WoMakersCode.Biblioteca.Application.Models.Usuario.ListarUsuario;
@@ -32,6 +35,7 @@ using WoMakersCode.Biblioteca.Application.UseCases;
 using WoMakersCode.Biblioteca.Application.UseCases.AutorUseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.EmprestimoUseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.LivroUseCase;
+using WoMakersCode.Biblioteca.Application.UseCases.RelatorioUseCase;
 using WoMakersCode.Biblioteca.Application.UseCases.UsuarioUseCase;
 using WoMakersCode.Biblioteca.Core.Repositories;
 using WoMakersCode.Biblioteca.Infra.DataBase;
@@ -55,6 +59,7 @@ namespace WoMakersCode.Biblioteca.API
             services.AddTransient<IEmprestimoRepository, EmprestimoRepository>();
             services.AddTransient<ILivroRepository, LivroRepository>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IRelatorioRepository, RelatorioRepository>();
             services.AddTransient<IUseCaseAsync<int, ListarAutorResponse>, ListarAutorIdUseCase>();
             services.AddTransient<IUseCaseAsync<ListarAutorRequest, List<ListarAutorResponse>>, ListarAutorUseCase>();
             services.AddTransient<IUseCaseAsync<AdicionarAutorRequest, AdicionarAutorResponse>, AdicionarAutorUseCase>();
@@ -75,6 +80,9 @@ namespace WoMakersCode.Biblioteca.API
             services.AddTransient<IUseCaseAsync<AdicionarEmprestimoRequest, AdicionarEmprestimoResponse>, AdicionarEmprestimoUseCase>();
             services.AddTransient<IUseCaseAsync<AtualizarEmprestimoRequest, AtualizarEmprestimoResponse>, AtualizarEmprestimoUseCase>();
             services.AddTransient<IUseCaseAsync<DeletarEmprestimoIdRequest, DeletarEmprestimoIdResponse>, DeletarEmprestimoIdUseCase>();
+            services.AddTransient<IUseCaseAsync<DevolucoesEmAtrasoFiltroRequest, List<DevolucoesEmAtrasoResponse>>, RelatorioDevolucoesEmAtrasoUseCase>();
+            services.AddTransient<IUseCaseAsync<LivrosEmEmprestimoRequest, List<LivrosEmEmprestimoResponse>>, RelatorioLivrosEmEmprestimoUseCase>();
+            services.AddTransient<IUseCaseAsync<LivrosDisponiveisRequest, List<LivrosDisponiveisResponse>>, RelatorioLivrosDisponiveisUseCase>();
 
             services.AddAutoMapper(typeof(MappingProfile));
 
