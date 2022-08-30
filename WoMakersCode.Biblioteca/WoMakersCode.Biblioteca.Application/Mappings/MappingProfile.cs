@@ -82,18 +82,18 @@ namespace WoMakersCode.Biblioteca.Application.Mappings
 
             CreateMap<DevolucoesEmAtrasoFiltroRequest, LivrosAtrasadosDTO>()
                 .ForMember(dest => dest.NomeUsuario, fonte => fonte.MapFrom(src => src.NomeUsuario))
-                .ForMember(dest => dest.TituloLivro, fonte => fonte.MapFrom(src => src.TituloLivro))
-                .ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))
-                .ForMember(dest => dest.DataDevolucao, fonte => fonte.MapFrom(src => src.DataDevolucao));
+                .ForMember(dest => dest.TituloLivro, fonte => fonte.MapFrom(src => src.TituloLivro));
+                /*.ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))
+                .ForMember(dest => dest.DataDevolucao, fonte => fonte.MapFrom(src => src.DataDevolucao));*/
 
             CreateMap<LivrosAtrasadosDTO, DevolucoesEmAtrasoResponse>()
                 .ForMember(dest => dest.TituloLivro, fonte => fonte.MapFrom(src => src.TituloLivro))
                 .ForMember(dest => dest.NomeAutor, fonte => fonte.MapFrom(src => src.NomeAutor))
                 .ForMember(dest => dest.NomeUsuario, fonte => fonte.MapFrom(src => src.NomeUsuario))
                 .ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))
-                .ForMember(dest => dest.DataDevolucao, fonte => fonte.MapFrom(src => src.DataDevolucao))
+                .ForMember(dest => dest.DataDevolucao, fonte => fonte.MapFrom(src => src.DataDevolucao));/*
                 .ForMember(dest => dest.DiasEmAtraso, fonte => fonte.MapFrom(src => src.DiasEmAtraso))
-                .ForMember(dest => dest.ValorMulta, fonte => fonte.MapFrom(src => src.ValorMulta));
+                .ForMember(dest => dest.ValorMulta, fonte => fonte.MapFrom(src => src.ValorMulta));*/
 
             CreateMap<LivrosEmEmprestimoRequest, LivroEmprestadoDTO>()
                 .ForMember(dest => dest.DataEmprestimo, fonte => fonte.MapFrom(src => src.DataEmprestimo))

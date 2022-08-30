@@ -18,7 +18,7 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
         {
             _context = context;
         }
-        public Task<IEnumerable<LivrosDisponiveisDTO>> RelatorioLivrosDisponiveis()
+        public Task<IEnumerable<LivrosDisponiveisDTO>> RelatorioLivrosDisponiveis(string nomeUsuario, string tituloLivro)
         {
             throw new NotImplementedException();
         }
@@ -36,10 +36,22 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
             if (dataInicio != null)
                 registros = registros.Where(w => w.DataEmprestimo == dataInicio);
 
-            await registros
-                 .ToListAsync();
+            if (!string.IsNullOrEmpty(tituloLivro))
+                registros = registros.Where(w => w.Livro.Titulo.Contains(tituloLivro));
 
-            return new List<LivrosAtrasadosDTO>();
+            var resposta = await registros
+                 .Select(s => new LivrosAtrasadosDTO()
+                 {
+                     TituloLivro = s.Livro.Titulo,
+                     NomeAutor = s.Livro.Autor.Nome,
+                     NomeUsuario = s.Usuario.Nome,
+                     DataEmprestimo = s.DataEmprestimo/*
+                     DataDevolucao = s.DataEmprestimo.AddDays(7),
+                     ValorMulta = (DateTime.Now - s.DataEmprestimo.AddDays(7)).Days * 0.5M*/
+                 })
+                  .ToListAsync();
+
+            return resposta;
         }
 
         public async Task<IEnumerable<LivroEmprestadoDTO>> RelatorioLivrosEmprestados(DateTime? dataInicio, DateTime? dataDevolucao)
@@ -62,8 +74,8 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
             var resposta = await registros
                 .Select(s => new LivroEmprestadoDTO()
                 {
-                    Titulo = s.Livro.Titulo,
-                    Usuario = s.Usuario.Nome,
+                    TituloLivro = s.Livro.Titulo,
+                    NomeUsuario = s.Usuario.Nome,
                     DataEmprestimo = s.DataEmprestimo,
                     DataDevolucao = s.DataEmprestimo.AddDays(7)
                 })

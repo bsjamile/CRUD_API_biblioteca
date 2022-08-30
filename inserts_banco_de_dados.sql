@@ -3625,4 +3625,15 @@ insert into emprestimos (dataemprestimo, datadevolucao, idusuario, idlivro) valu
 insert into emprestimos (dataemprestimo, datadevolucao, idusuario, idlivro) values (CONVERT(datetime, '2018-07-03 03:35:57', 121),CONVERT(datetime, '2022-03-15 05:13:52', 121), 7, 222);
 go
 
+select * from autores
+where nome = 'string'
+go
 
+select * from emprestimos
+go
+
+select * from livros
+go
+
+select * from usuarios
+go

@@ -20,7 +20,7 @@ namespace WoMakersCode.Biblioteca.Application.UseCases.RelatorioUseCase
 
         public async Task<List<LivrosDisponiveisResponse>> ExecuteAsync(LivrosDisponiveisRequest request)
         {
-            var atrasos = await _repository.RelatorioLivrosDisponiveis();
+            var atrasos = await _repository.RelatorioLivrosDisponiveis(request.TituloLivro, request.NomeAutor);
             var atrasosResponse = _mapper.Map<List<LivrosDisponiveisResponse>>(atrasos);
 
             return atrasosResponse;

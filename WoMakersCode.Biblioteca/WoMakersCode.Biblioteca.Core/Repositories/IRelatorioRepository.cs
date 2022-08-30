@@ -11,7 +11,7 @@ namespace WoMakersCode.Biblioteca.Core.Repositories
     {
         Task<IEnumerable<LivrosAtrasadosDTO>> RelatorioLivrosEmAtraso(DateTime? dataInicio, DateTime? dataDevolucao, string nomeUsuario, string tituloLivro);
         Task<IEnumerable<LivroEmprestadoDTO>> RelatorioLivrosEmprestados(DateTime? dataInicio, DateTime? dataDevolucao);
-        Task<IEnumerable<LivrosDisponiveisDTO>> RelatorioLivrosDisponiveis();
+        Task<IEnumerable<LivrosDisponiveisDTO>> RelatorioLivrosDisponiveis(string nomeUsuario, string tituloLivro);
 
     }
 }
