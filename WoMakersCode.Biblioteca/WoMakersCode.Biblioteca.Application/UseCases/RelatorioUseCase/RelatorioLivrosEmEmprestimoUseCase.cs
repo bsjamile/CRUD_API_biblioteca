@@ -20,10 +20,10 @@ namespace WoMakersCode.Biblioteca.Application.UseCases.RelatorioUseCase
 
         public async Task<List<LivrosEmEmprestimoResponse>> ExecuteAsync(LivrosEmEmprestimoRequest request)
         {
-            var atrasos = await _repository.RelatorioLivrosEmprestados(request.DataEmprestimo, request.DataDevolucao);
-            var atrasosResponse = _mapper.Map<List<LivrosEmEmprestimoResponse>>(atrasos);
+            var emprestimos = await _repository.RelatorioLivrosEmprestados(request.DataEmprestimo, request.DataDevolucao);
+            var emprestimosResponse = _mapper.Map<List<LivrosEmEmprestimoResponse>>(emprestimos);
 
-            return atrasosResponse;
+            return emprestimosResponse;
         }
     }
 }

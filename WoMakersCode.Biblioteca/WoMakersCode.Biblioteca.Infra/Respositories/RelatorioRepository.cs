@@ -18,9 +18,32 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
         {
             _context = context;
         }
-        public Task<IEnumerable<LivrosDisponiveisDTO>> RelatorioLivrosDisponiveis(string nomeUsuario, string tituloLivro)
+        public async Task<IEnumerable<LivrosDisponiveisDTO>> RelatorioLivrosDisponiveis(string nomeAutor, string tituloLivro)
         {
-            throw new NotImplementedException();
+            var registros = _context
+                .Livros
+                    .Include(ti => ti.Autor)
+                .AsNoTracking()
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(nomeAutor))
+                registros = registros.Where(w => w.Autor.Nome.Contains(nomeAutor));
+
+            if (!string.IsNullOrEmpty(tituloLivro))
+                registros = registros.Where(w => w.Titulo.Contains(tituloLivro));
+
+            var resposta = await registros
+                 .Select(s => new LivrosDisponiveisDTO()
+                 {
+                     TituloLivro = s.Titulo,
+                     NomeAutor = s.Autor.Nome,
+                     QtdDisponivel = s.QuantidadeDisponivel
+                     //QtdEmp = 
+
+                 })
+                  .ToListAsync();
+
+            return resposta;
         }
 
         public async Task<IEnumerable<LivrosAtrasadosDTO>> RelatorioLivrosEmAtraso(DateTime? dataInicio, DateTime? dataDevolucao, string nomeUsuario, string tituloLivro)
@@ -36,6 +59,12 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
             if (dataInicio != null)
                 registros = registros.Where(w => w.DataEmprestimo == dataInicio);
 
+            if (dataDevolucao != null)
+                registros = registros.Where(w => w.DataDevolucao == dataDevolucao);
+
+            if (!string.IsNullOrEmpty(nomeUsuario))
+                registros = registros.Where(w => w.Usuario.Nome.Contains(nomeUsuario));
+
             if (!string.IsNullOrEmpty(tituloLivro))
                 registros = registros.Where(w => w.Livro.Titulo.Contains(tituloLivro));
 
@@ -45,9 +74,10 @@ namespace WoMakersCode.Biblioteca.Infra.Respositories
                      TituloLivro = s.Livro.Titulo,
                      NomeAutor = s.Livro.Autor.Nome,
                      NomeUsuario = s.Usuario.Nome,
-                     DataEmprestimo = s.DataEmprestimo/*
-                     DataDevolucao = s.DataEmprestimo.AddDays(7),
-                     ValorMulta = (DateTime.Now - s.DataEmprestimo.AddDays(7)).Days * 0.5M*/
+                     DataEmprestimo = s.DataEmprestimo,                     
+                     DataDevolucao = s.DataEmprestimo.AddDays(7)
+                     //ValorMulta = (DateTime.Now - s.DataEmprestimo.AddDays(7)).Days * 0.5M,
+                     //DiasEmAtraso = (DateTime.Now - s.DataEmprestimo.AddDays(0)).Days
                  })
                   .ToListAsync();
 
